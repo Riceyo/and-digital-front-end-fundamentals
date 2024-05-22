@@ -1,0 +1,141 @@
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.sr-only-focus:focus {
+    position: absolute;
+    overflow: visible;
+    clip: auto;
+    background: yellow;
+    color: black;
+    z-index: 999;
+}
+
+body {
+    background-color: snow;
+    font-family: sans-serif;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0px;
+    display: flex;
+}
+
+nav li {
+    padding: 0px;
+    list-style: none;
+}
+  
+nav a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    color: lightgrey;
+}
+
+a {
+    color: violet;
+    text-decoration: none;
+}
+
+header p {
+    font-style: italic;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@keyframes nameTransition {
+    0% {
+      color: red;
+    }
+    50% {
+      color: green
+    }
+    100% {
+      color: blue;
+    }
+  }
+
+#name-hero {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: lightgrey;
+    background-image: url(rice.jpg);
+    background-repeat: repeat;
+    padding-left: 10px;
+    vertical-align: middle;
+    animation: nameTransition 1s infinite;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+figure {
+    margin-left: 0px;
+}
+
+figure img {
+    border: 2px solid black;
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
+  
+#about p:first-of-type::first-letter {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+ 
+input {
+    padding: 2px;
+    margin: 2px;
+}
+
+button {
+    padding: 2px;
+    margin: 2px;
+}
+
+input:focus {
+    background-color: lightgrey;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+footer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lime;
+    }
+    figure img {
+        float: none;
+    }
+} 

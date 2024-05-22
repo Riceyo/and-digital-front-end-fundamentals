@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Richmond Rice</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <a href="#main-content" class="sr-only sr-only-focus">Skip to content</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>             
+            </nav>
+            <h1 id="name-hero">Richmond Rice</h1>
+            <p>Lead Software Engineer</p>
+            <p>Office for National Statistics</p>
+        </header>
+        <main id="main-content">
+            <section>
+                <h2>Contact Me</h2>
+                <p><a href="mailto:richmond@ricey.org">richmond@ricey.org</a></p>
+                <form method="POST" aria-label="Contact form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true" />
+                    </div>
+                    <div>
+                        <label for="occupation">Occupation:</label>
+                        <input list="occupations" id="occupation" name="occupation" />
+                        <datalist id="occupations">
+                            <option value="Developer"></option>
+                            <option value="Analyst"></option>
+                            <option value="Designer"></option>
+                        </datalist>
+                    </div>
+                    <fieldset>
+                        <legend>What's the best way to enjoy a potato?</legend>
+                        <div>
+                            <input type="radio" id="french-fries" name="potato-preference" value="French Fries">
+                            <label for="french-fries">French Fries</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="mashed-potatoes" name="potato-preference" value="Mashed Potatoes">
+                            <label for="mashed-potatoes">Mashed Potatoes</label>
+                        </div>
+                      </fieldset>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p aria-label="Copyright notice">© Richmond Rice</p>
+        </footer>
+    </body>
+</html>
